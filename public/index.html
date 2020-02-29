@@ -1,11 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge Trampos.co</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(255, 255, 255);
+        }
+
+        main {
+            background-color: #000000;
+            border: 1px solid white;
+            width: 350px;
+        }
+
+        ul {
+            background-color: #616161;
+            list-style: none;
+        }
+
+        li {
+            border-left: 8px #FF2478 solid;
+            border-bottom: 1px solid whitesmoke;
+            padding: 10px 30px;
+            height: 50px;
+        }
+
+        #title {
+            height: 60px;
+            padding-top: 15px;
+        }
+
+        #title h1{
+            padding-left: 20px;
+            font-size: 20px;
+            font-weight: lighter;
+            text-transform: uppercase;
+        }
+
+        #vagas {
+            height: 200px;
+            overflow: auto;
+        }
+    </style>
 </head>
+
 <body>
+    <main id="main">
+        <div id="title">
+            <h1>Vagas: Trampos.co</h1>
+        </div>
+        <div id="vagas">
+
+            <ul>
+                <li>
+                    <h5>Desenvolvedor full stack</h5>
+                    <span>Google</span>
+                </li>
+
+                <li>
+                    <h5>Desenvolvedor full stack</h5>
+                    <span>Google</span>
+                </li>
+
+                <li>
+                    <h5>Desenvolvedor full stack</h5>
+                    <span>Google</span>
+                </li>
+
+
+                <li>
+                    <h5>Desenvolvedor full stack</h5>
+                    <span>Google</span>
+                </li>
+
+
+                <li>
+                    <h5>Desenvolvedor full stack</h5>
+                    <span>Google</span>
+                </li>
+
+                <li>
+                    <h5>Desenvolvedor full stack</h5>
+                    <span>Google</span>
+                </li>
+            </ul>
+        </div>
+        <span>trampos.co</span>
+    </main>
     <script src="bundle.js"></script>
 </body>
+
 </html>
