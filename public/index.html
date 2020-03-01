@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge Trampos.co</title>
     <style>
+
+        @font-face {
+            font-family: SourceSansPro;
+            src: url('../src/css/fonts/SourceSansPro-Regular.otf');
+        }
         * {
             margin: 0;
             padding: 0;
@@ -18,6 +23,7 @@
             height: 100%;
             background-color: #f5f5f5;
             display: flex;
+            font-family: SourceSansPro Arial, Helvetica, sans-serif;
             justify-content: center;
             align-items: center;
             color: rgb(255, 255, 255);
@@ -38,7 +44,7 @@
             border-left: 8px #FF2478 solid;
             border-bottom: 1px solid whitesmoke;
             padding: 10px 30px;
-            height: 50px;
+            height: 65px;
         }
 
         #title {
@@ -57,6 +63,16 @@
             height: 200px;
             overflow: auto;
         }
+        
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            transition: all 0.5s;
+        }
+
+        a:hover {
+            color: thistle;
+        }
     </style>
 </head>
 
@@ -67,11 +83,13 @@
         </div>
         <div id="vagas">
 
-            <ul>
-                <li>
-                    <h5>Desenvolvedor full stack</h5>
-                    <span>Google</span>
-                </li>
+            <ul id="listJobs">
+                <a href="#">
+                    <li>
+                        <h5>Desenvolvedor full stack</h5>
+                        <span>Google</span>
+                    </li>
+                </a>
 
                 <li>
                     <h5>Desenvolvedor full stack</h5>
