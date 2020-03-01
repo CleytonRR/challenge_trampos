@@ -72,6 +72,21 @@
         a:hover {
             color: thistle;
         }
+
+        /* spiner loading */
+        .spinner {
+            border: 8px solid rgba(0, 0, 0, .1);
+            border-left-color: #22a6b3;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        /* Animação spinner */
+        @keyframes spin {
+            to { transform: rotate(360deg);}
+        }
     </style>
 </head>
 

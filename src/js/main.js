@@ -5,6 +5,7 @@ class App {
         this.jobs = []
         this.colors = ['#99FFA6', '#FF2478', '#7D629C', '#E061FF']
         this.listJobs = document.getElementById("listJobs")
+        this.loader = document.createElement('div')
         this.loadPage()
     }
 
@@ -13,6 +14,8 @@ class App {
     }
 
     async getJobs() {
+        this.loader.className = 'spinner'
+        this.listJobs.appendChild(this.loader)
         try {
             const response = await Api.getJobs()
             this.jobs = response
@@ -23,8 +26,7 @@ class App {
     }
 
     render() {
-        this.listJobs.innerHTML = ''
-
+        this.listJobs.removeChild(this.loader)
         this.jobs.forEach(item => {
 
             let title = document.createElement('h5')
