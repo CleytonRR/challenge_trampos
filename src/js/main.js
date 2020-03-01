@@ -3,6 +3,7 @@ import Api from './api'
 class App {
     constructor() {
         this.jobs = []
+        this.colors = ['#99FFA6', '#FF2478', '#7D629C', '#E061FF']
         this.listJobs = document.getElementById("listJobs")
         this.loadPage()
     }
@@ -33,6 +34,7 @@ class App {
             company.innerText = item.opportunity.company_name
     
             let listItem = document.createElement('li')
+            listItem.style.borderLeft = `8px ${this.colors[Math.floor(Math.random() * 4)]} solid`
             listItem.appendChild(title)
             listItem.appendChild(company)
     
