@@ -35,3 +35,8 @@ and running
 ```
 yarn dev
 ```
+
+
+### Final result
+
+<img src='/src/img/resultado.png' height="400" width="400">
