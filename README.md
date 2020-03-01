@@ -2,5 +2,36 @@
 
 Widget made for challenge trampos.co
 
-## How work it
-Using axios for get datas of API and rendering datas 
+## Getting Started
+
+### Prerequisites
+
+you need to have the following packages installed
+
+```
+Node and yarn
+```
+
+for install consult: 
+* [Node](https://nodejs.org/en/)
+* [yarn](https://yarnpkg.com/)
+
+### Installing
+
+```
+git clone git@github.com:CleytonRR/challenge_trampos.git
+```
+After:
+```
+cd challenge_trampos/
+```
+then, install all dependencies
+```
+yarn install
+```
+
+and running 
+
+```
+yarn dev
+```
